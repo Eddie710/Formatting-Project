@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Change Text For Fun</h1>
+    <br>
+    <br>
+    <h3>Capitalize Text</h3>
+    <p id="p1">The Fat Man Flies Over The Moon Tonight</p>
+    <button id="s1" onclick="cap()">Change</button>
+    <p id="n1"></p>
+
+    <h3>Lowercase Text</h3>
+    <p id="p2">Did you or did you not tip kitty boom boom 500$</p>
+    <button id="s2" onclick="low()">Change</button>
+    <p id="n2"></p>
+
+  
+    
+</body>
+<script>
+    const p1 = document.getElementById('p1');
+    const p2 = document.getElementById('p2');
+
+    const s1 = document.getElementById('s1');
+    const s2 = document.getElementById('s2');
+
+    const n1 = document.getElementById('n1');
+    const n2 = document.getElementById('n2');
+
+    function r(){
+    location.reload
+    }
+
+    function cap(){
+        const np1 = p1.style.textTransform = "uppercase";
+        n1.appendChild(np1)
+    }
+    function low(){
+        const np2 = p2.style.textTransform = "lowercase";
+        n2.appendChild(np2)
+    }
+</script>
+</html>
